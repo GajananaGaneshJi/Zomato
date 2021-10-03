@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Project</title>
+  <link rel="stylesheet" href="style.css" />  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:
+  wght@300&display=swap" />
+</head>
+<body>
+   <header>
+     <nav class="navbar">
+       <div class="navbar_brand">
+         <img src="./assets/logo.png" alt="logo" class="brand_logos"  />
+       </div>
+       <div class="navbar_nav_items">
+         <div class="nav_items">
+           <button class="button_primary">Order Food</button>
+           <button
+           class="button_primary_hamburger_menumobile_only"
+           id="hamburgermenu"
+           >
+           <div>
+             <div></div>
+             <div></div>
+           </button>
+        
+       </div>
+     </nav>
+   </header> 
+   <main class="container">
+   <section class="hero_container">
+     <div class="hero_image_container">
+       <img src="./assets/hero.jpg" alt="hero image" class="hero_image">
+       <img src="./assets/svg/heroShape.svg" alt="hero image shape"
+        class="hero_image_shape">
+        <img src="/assets/svg/herobgpattren.svg" alt="hero image pattern"
+        class="hero_image_pattern">
+     </div>
+     <div class="hero_description">
+       <h1 class="hero_text">
+         Order Food from favourite restaurants near you.
+       </h1>
+       <button class="button_primary">
+         Order Now
+       </button>
+     </div>
+   </section>
+   <section class="video_footage_container">
+     <div class="video_footage">
+      <iframe src="https://player.vimeo.com/video/321211297?h=e3afffdf76" width="640" height="360"
+       frameborder="0"
+       allow="autoplay; fullscreen; picture-in-picture" 
+       allowfullscreen class="7stars_building"></iframe>
+     </div>
+     <div class="video_footage_text">
+       <p>
+         Your Stay and Food will be prepared by experts .You will get the best hospitality, without
+          compromosing the quality and hygiene.
+       </p>
+     </div>
+   </section>
+   <section class="food_list_container">
+     <h1 class="text_A1">Explore Our Menu</h1>
+     <div class="food_list_container_diagonal"></div>
+     <div class="food_menu_card_list">
+       <!--card1-->
+       <div  class="food_menu_card">
+        <img src="./assets/burger.jpg" alt="burger" class="food_menu_card_image">
+        <div class="food_menu_card_details">
+        <h4 class="food_menu_card_title"><strong>Burgers</strong></h4>
+        <p>burger King, Mcdonalds, Burger Place
+          <span style="color: red;">+3</span></p>
+        </div>
+       </div>
+      <!--card2-->
+      <div  class="food_menu_card food_menu_card_move_up">
+        <img src="./assets/pizza.jpg" alt="burger" class="food_menu_card_image">
+        <div class="food_menu_card_details">
+        <h4 class="food_menu_card_title"><strong>Pizza</strong></h4>
+        <p>Pizza Hut, Domminoz Pizza
+          <span style="color: red;">+3</span></p>
+        </div>
+       </div>
+  <!--card3-->
+  <div  class="food_menu_card">
+    <img src="./assets/iceCream.jpg" alt="burger" class="food_menu_card_image">
+    <div class="food_menu_card_details">
+    <h4 class="food_menu_card_title"><strong>Ice creams</strong></h4>
+    <p>Baskin Robins,Ibaco
+      <span style="color: red;">+3</span></p>
+    </div>
+   </div>
+     </div>
+   </section>
+   <section class="restaurant_list-container">
+     <div class="restaurant_list_text">
+       <h4 class="text_A1">Order from 100s of restaurants</h4>
+     </div>
+     <div class="restaurant_list_images_contaimer">
+      <div class="restaurant_list_raw_1">
+      <img src="./assets/restaurant1.jpg" alt="restaurant1" class="restaurant1">
+      <img src="./assets/restaurant2.jpg" alt="restaurant2" class="restaurant2">
+      </div>
+      <div class="restaurant_list_raw_2">
+      <img src="./assets/restaurant3.jpg" alt="restaurant3" class="restaurant3">
+      <img src="./assets/restaurant4.jpg" alt="restaurant4" class="restaurant4">
+      </div>
+     </div>
+   </section>
+   <section class="email_container"> 
+     <div>
+       <h1 class="email_heading">Stay Updated</h1>
+       <div class="email_input_field">
+         <div>
+           <input type="email" placeholder="email@Ganesh.com" class="email_input"/>
+         </div>
+         <button class="button_primary">Get Updates</button>
+       </div>
+     </div>
+   </section>
+
+   <section class="quote container">
+     <div class="quote_image_overlay"></div>
+     <h3 class="quote_image_text">
+       When a man's stomach is full it makes no difference between wether he is 
+       rich or poor
+     </h3>
+     </div>
+   </section>
+   </main>
+   <footer>
+<img src="./assets/logo.png" alt="logo"/>
+<ul>
+<li>Pricing</li>
+<li>Terms and conditions</li>
+<li>Partnership</li>
+<li>Career</li>
+<li>Contact</li>
+</ul>
+   </footer>
+   <script>
+     const hamburgermenu =document.getElementById("hamburgermenu");
+     const mobileNavDropDown =document.querySelector(
+       ".mobile_navbar_items"
+     );
+     window.addEventListener("click",()=> {
+       if (mobileNavDropDown.classList.contains("hamburger_menu_close"))
+       return mobileNavDropDown.classList.remove("hamburger_menu_close");
+       return mobileNavDropDown.classList.add("hamburker_menu_close")
+     });
+   </script>
+</body>
+</html>
